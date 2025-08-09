@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meal Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🍽️ Meal Explorer</h1>
+
+  <div class="tabs">
+    <button onclick="showTab('random')">🍛 Random Meals</button>
+    <button onclick="showTab('categories')">📂 Categories</button>
+  </div>
+
+  <div class="search">
+    <input type="text" id="searchInput" placeholder="Search meal by name..." />
+    <button onclick="searchMeal()">🔍 Search</button>
+  </div>
+
+  <div id="random" class="tab-content"></div>
+  <div id="categories" class="tab-content" style="display: none;"></div>
+  <div id="searchResults" class="tab-content"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
